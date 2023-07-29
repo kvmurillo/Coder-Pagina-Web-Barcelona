@@ -1,0 +1,463 @@
+/* --------- Aquí comienzan las clases generales para todo el sitio inicio -----------*/
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+}
+
+main {
+  background-color: black;
+}
+
+/*---------- Aquí comienza el header---------------------------------------------------*/
+header {
+  background: linear-gradient(90deg, #cd122d 0, #154284);
+  padding: 16px;
+  margin: 0px;
+}
+
+header img {
+  height: 100px;
+}
+
+header nav {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 400px;
+  position: absolute;
+  top: 45px;
+  right: calc(50% - 200px);
+  border-radius: 12px;
+}
+
+header nav ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+header nav ul a li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+
+header button {
+  padding: 12px 16px;
+  background: transparent;
+  border: solid 1px white;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  top: 45px;
+  right: 16px;
+  cursor: pointer;
+}
+/*---------- Aquí Termina el header--------------------------------------------------*/
+
+/*---------- Aquí comienza el footer--------------------------------------------------*/
+
+footer {
+  background: linear-gradient(90deg, #cd122d 0, #154284);
+  padding: 16px;
+  margin: 0px;
+  display: flex;
+}
+
+footer .footer__container--left,
+footer .footer__container--center,
+footer .footer__container--right {
+  box-sizing: border-box;
+  width: 30%;
+  height: 350px;
+  display: inline-block;
+}
+
+.footer__container--left {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__container--left ul {
+  list-style: none;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.footer__container--left ul a {
+  text-decoration: none;
+}
+
+.footer__container--left ul a li {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+
+.footer__container--center {
+  padding: 16px 0px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icons__container a {
+  margin: 0px 16px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer .footer__container--right {
+  position: relative;
+}
+
+footer .footer__container--right button {
+  padding: 12px 16px;
+  background: transparent;
+  border: solid 1px white;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+
+footer .footer__container--right p {
+  color: white;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  text-align: right;
+}
+
+/*---------- Aquí Termina el footer---------------------------------------------------*/
+
+/* --------- Aquí terminan las clases generales para todo el sitio inicio ------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+/* -----------Aquí comienzan las clases del index.html -------------------------------*/
+
+.home__container {
+  background-color: rgb(0, 0, 0);
+}
+
+.news__container {
+  padding: 16px;
+  background-color: rgb(0, 0, 0);
+  height: 300px;
+}
+
+.news__container h2 {
+  color: white;
+  font-weight: 400;
+  display: block;
+  padding: 16px 0px 16px 0px;
+}
+
+.news-images__container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.news-images__card {
+  width: 30%;
+  height: 200px;
+  display: inline-block;
+  margin-right: 16px;
+  overflow: hidden;
+}
+
+.news-images__card-last-child {
+  width: 30%;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.sponsor-images__container {
+  padding: 16px 16px 16px 16px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.sponsor-images__container img {
+  padding: 16px 16px;
+}
+
+.categories__container {
+  background-color: black;
+  padding: 16px 16px 16px 16px;
+  text-align: center;
+}
+
+.categories__child {
+  width: 150px;
+  height: 200px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #cd122d 0, #154284);
+  display: inline-block;
+  margin: 16px 16px;
+  border: solid 1.5px white;
+  cursor: pointer;
+  background-image: url(../images/FC_Barcelona.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center 15%;
+}
+
+.categories__child span {
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 10px;
+  position: relative;
+  bottom: -140px;
+  font-weight: 500;
+}
+
+.games__container {
+  background-color: black;
+  padding: 16px 16px 16px 16px;
+  text-align: center;
+}
+
+.games__container h2 {
+  text-align: left;
+  color: white;
+  font-weight: 400;
+  display: block;
+  padding: 16px 0px 16px 0px;
+}
+
+.games-images__container {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.games__container img {
+  border-radius: 12px;
+  margin: 0px 16px;
+}
+
+.team__container {
+  background-color: black;
+  padding: 16px 16px 16px 16px;
+  text-align: center;
+}
+
+.team__inner {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.team__container h2 {
+  text-align: left;
+  color: white;
+  font-weight: 400;
+  display: block;
+  padding: 16px 0px 16px 0px;
+}
+
+.coach__container {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  display: inline-block;
+  border-radius: 12px;
+  background-image: url(../images/xavi.jpg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: 45% 35%;
+}
+
+.players__container {
+  width: 800px;
+  height: 300px;
+  display: inline-block;
+  margin-left: 16px;
+  border-radius: 12px;
+  background-image: url(../images/players.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 100% 45%;
+}
+
+.contact__container {
+  background-color: black;
+  padding: 16px 16px 48px 16px;
+}
+
+.contact__container h2 {
+  text-align: left;
+  color: white;
+  font-weight: 400;
+  display: block;
+  padding: 16px 0px 16px 0px;
+}
+
+.contact__inner {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px 20px 16px 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contact__inner label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.contact__inner input {
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 16px;
+  display: inline-block;
+  width: 500px;
+  padding: 10px;
+  border-radius: 12px;
+  border: solid 1.5px white;
+  background-color: white;
+  margin-left: 0px;
+}
+
+.contact__inner--left {
+  padding-right: 16px;
+  width: 500px;
+  margin: 0px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.contact__inner--right {
+  display: inline-block;
+  width: 500px;
+  margin: 0px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+}
+
+.description__container {
+  width: 1032px;
+}
+
+.description__container textarea {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 12px;
+  border: solid 1.5px white;
+  background-color: white;
+  margin-left: 0px;
+  width: 100%;
+}
+
+/* -----------Aquí terminan las clases del index.html --------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+/* -----------Aquí comienzan las clases del latest-results.html ----------------------*/
+
+/* -----------Aquí terminan las clases del latest-results.html -----------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+/* -----------Aquí comienzan las clases del positions.html ---------------------------*/
+
+/* -----------Aquí terminan las clases del positions.html ----------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+/* -----------Aquí comienzan las clases del first-team.html --------------------------*/
+
+.first-team__container {
+  background-color: #000000;
+}
+
+.first-team__inner {
+  background-color: black;
+  padding: 16px;
+}
+
+.first-team__inner h2 {
+  color: white;
+  margin-top: 32px;
+}
+
+.player__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 16px 8px;
+  margin-top: 16px;
+  border-radius: 12px;
+}
+
+.player {
+  width: 400px;
+  margin: 16px 32px;
+}
+
+.player img {
+  width: 400px;
+  display: flex;
+}
+
+.first-team__inner table {
+  margin: 0px;
+  background-color: black;
+  width: 100%;
+}
+
+.first-team__inner table table,
+.first-team__inner table tr th,
+.first-team__inner table tr td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 36px 12px;
+  color: white;
+  text-align: left;
+  width: 50%;
+  text-transform: uppercase;
+}
+/* -----------Aquí terminan las clases del first-team.html ---------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+
+/* -----------Aquí comienzan las clases del club.html --------------------------------*/
+
+/* -----------Aquí terminan las clases del club.html ---------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
