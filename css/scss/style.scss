@@ -1,0 +1,41 @@
+@import './variables/variables.scss';
+@import './mixin/mixin.scss';
+
+.positions__container {
+    background-color: $colorBlack;
+    padding: 1rem 1rem;
+    display:flex;
+    flex-direction: column;
+    .positions_title{
+        @include MainTitle;
+        margin: 0px;
+
+    }
+    .table__container {
+        margin: 0px;
+        .table-responsive {
+            .table {
+                margin-bottom: 0px !important;
+                @media (max-width: 767px) {
+                    width: 576px !important;
+                }
+            }
+        }
+    }
+    .container-fluid {
+        padding: 0px;
+        .row {
+            .col-12 {
+                .btn {
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    .divider__table {
+        color: var(--bs-white);//Esta variable viene de bootstrap
+        border: solid 2px;
+        opacity: .35;
+    }
+}
+

@@ -1,0 +1,7 @@
+@mixin MainTitle {
+    font-size: 24px;
+    color: var(--bs-white);//Esta variable viene de bootstrap
+    font-weight: 400;
+    display: block;
+    padding: 16px 0px 16px 0px;
+}
